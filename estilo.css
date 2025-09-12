@@ -6,7 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+   
+    background: linear-gradient(to bottom right, #000000, #333333);
+    font-family: Arial, sans-serif;
+    color: white; /* Texto blanco para contraste */
 }
 
 .container {
