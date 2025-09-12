@@ -50,3 +50,13 @@ body {
 .enlace:hover {
     opacity: 0.8;
 }
+
+.redlogo{
+        margin: 0;
+    top: 4px;
+    /* padding: 0; */
+    left: 22px;
+    position: relative;
+    max-width: 25px;
+
+}
