@@ -12,14 +12,13 @@ body {
     color: white; /* Texto blanco para contraste */
 }
 
-.container {
+    .container {
     text-align: center;
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .logo {
     max-width: 150px;
     margin-bottom: 20px;
@@ -46,6 +45,9 @@ body {
 .email {
     background-color: #007bff;
 }
+.tiktok {
+    background-color: black;
+}
 
 .enlace:hover {
     opacity: 0.8;
@@ -58,5 +60,15 @@ body {
     left: 22px;
     position: relative;
     max-width: 25px;
+
+}
+@media screen and (max-aspect-ratio: 2/3){
+    .container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
 }
