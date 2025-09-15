@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,7 +8,7 @@ body {
     height: 100vh;
    
     background: linear-gradient(to bottom right, #000000, #333333);
-    font-family: Arial, sans-serif;
+    font-family: Inter;
     color: white; /* Texto blanco para contraste */
 }
 .banner{
@@ -32,7 +32,7 @@ body {
     max-width: fit-content;
 }
 .logo {
-    max-width: 35%;
+    max-width: 70px;
     margin-bottom: 20px;
 }
 
