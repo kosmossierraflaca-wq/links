@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
    
-    background: linear-gradient(to bottom right, #000000, #333333);
+    background: linear-gradient(to bottom right, #000000, #3334CF);
     font-family: Inter;
     color: white; /* Texto blanco para contraste */
 }
@@ -23,16 +23,26 @@ body {
 }
 
 .container {
+     background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+
     text-align: center;
-    padding: 20px;
-    background: white;
+
+    /*background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
     max-height: 95%;
     max-width: fit-content;
 }
 .logo {
-    max-width: 70px;
+    max-width: 110px;
     margin-bottom: 20px;
 }
 
@@ -51,15 +61,49 @@ body {
 }
 
 .whatsapp {
-    background-color: #25D366;
+    
+     background-color: rgba(12, 427, 0, .6);
+      backdrop-filter: blur(10px);
+       box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+
+    /*background-color: #25D366;*/
 }
 
 .email {
-    background-color: #007bff;
+         background-color: rgba(0, 0, 255, .6);
+      backdrop-filter: blur(10px);
+       box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 255, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+   /* background-color: #007bff;*/
 }
 .tiktok {
-    background-color: black;
+         background-color: rgba(0, 0, 0, .6);
+      backdrop-filter: blur(10px);
+       box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+    /*background-color: black;*/
 }
+.catalogo {
+         background-color: rgba(255, 0, 0, .6);
+      backdrop-filter: blur(10px);
+       box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(255, 255, 255, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+   /* background-color: red;*/
+}
+
 
 .enlace:hover {
     opacity: 0.8;
@@ -69,7 +113,7 @@ body {
         margin: 0;
     top: 4px;
     /* padding: 0; */
-    left: 22px;
+    left: 13px;
     position: relative;
     max-width: 25px;
 
