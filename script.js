@@ -26,5 +26,5 @@ function mostrarProductos() {
 }
 
 // Agregar productos
-agregarProducto('imagenes/senalsalidaemer.png', 'Señal de Emergencia 1', '$30.00');
-agregarProducto('imagenes/bacoiris12pz.png', 'Colores Bacoiris 12 pzas', '$44.00');
+agregarProducto('./imagenes/senalsalidaemer.png', 'Señal de Emergencia 1', '$30.00');
+agregarProducto('./imagenes/bacoiris12pz.png', 'Colores Bacoiris 12 pzas', '$44.00');
