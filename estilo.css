@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
    
-    background: linear-gradient(to bottom right, #000000, #3334CF);
+    /*background: linear-gradient(to bottom right, #000000, #FFFFFF);*/
     font-family: Inter;
     color: white; /* Texto blanco para contraste */
 }
@@ -56,52 +56,28 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 40px;
     width: 200px;
+    backdrop-filter: brightness(36.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0), inset 0 0 6px rgba(255, 255, 255, -2.5), inset 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .whatsapp {
     
-     background-color: rgba(12, 427, 0, .6);
-      backdrop-filter: blur(10px);
-       box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(255, 255, 255, 0.5),
-    inset 0 0 20px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+      background-color: green;
 
-    /*background-color: #25D366;*/
 }
 
 .email {
-         background-color: rgba(0, 0, 255, .6);
-      backdrop-filter: blur(10px);
-       box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(0, 0, 255, 0.5),
-    inset 0 0 20px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
-   /* background-color: #007bff;*/
+         background-color: blue;
+    
 }
 .tiktok {
-         background-color: rgba(0, 0, 0, .6);
-      backdrop-filter: blur(10px);
-       box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(255, 255, 255, 0.5),
-    inset 0 0 20px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
-    /*background-color: black;*/
+         background-color: black;
+      
 }
 .catalogo {
-         background-color: rgba(255, 0, 0, .6);
-      backdrop-filter: blur(10px);
-       box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(255, 255, 255, 0.5),
-    inset 0 0 20px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
-   /* background-color: red;*/
+         background-color:red;
 }
 
 
