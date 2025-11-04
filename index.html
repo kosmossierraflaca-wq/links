@@ -71,5 +71,61 @@
         </div>
         
     </div>
+    <script>
+    const snowflakes = [];
+    const snowflakesnumber = 300;
+    const snowflakessize = 3;
+    const snowflakesspeed = 1;
+    const snowflakescolor = '#ddd';
+
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'absolute';
+    canvas.style.top = '0px';
+    canvas.style.pointerEvents = 'none';
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+
+    const createSnowflake = () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.floor(Math.random() * snowflakessize) + 1,
+        color: snowflakescolor,
+        speed: Math.random() * snowflakesspeed + 3
+    });
+
+    const drawSnowflake = flake => {
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+        ctx.fillStyle = flake.color;
+        ctx.fill();
+        ctx.closePath();
+    };
+
+    const updateSnowflake = flake => {
+        flake.y += flake.speed;
+        if (flake.y > canvas.height) {
+            Object.assign(flake, createSnowflake());
+            flake.y = 0; // reset to top
+        }
+    };
+
+    const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        snowflakes.forEach(flake => {
+            updateSnowflake(flake);
+            drawSnowflake(flake);
+        });
+        requestAnimationFrame(animate);
+    };
+
+    for (let i = 0; i < snowflakesnumber; i++) {
+        snowflakes.push(createSnowflake());
+    }
+
+    animate(); // start animation loop
+</script>
 </body>
 </html>
