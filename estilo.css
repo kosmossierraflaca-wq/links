@@ -36,6 +36,26 @@ body {
     text-align: center;
 
 }
+
+.container::before {
+  --overflow-x: 0px;
+  --snow-image: url(imagenes/christmas-garland.png);
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: calc(var(--overflow-x) * -1);
+  border-image-source: var(--snow-image);
+  border-image-slice: calc(6 * 56 / 20) fill;
+  border-image-width: calc(28px / 3);
+  border-image-repeat: round;
+  width: calc(100% + var(--overflow-x) * 2);
+  height: 178px;
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.25));
+  opacity: 1;
+  -webkit-animation: fade-in 2s;
+          animation: fade-in 2s;
+}
+
 .logo {
     margin-top: 10px;
     max-width: 110px;
