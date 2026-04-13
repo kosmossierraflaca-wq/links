@@ -3,7 +3,7 @@ body {
     /* background-size: auto; */
     background-repeat: no-repeat;
     background-position: right;
-  background-image: url(imagenes/background.png);
+  /*background-image: url(imagenes/background.png);*/
     font-family: Inter;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
    
-    /*background: linear-gradient(to bottom right, #000000, #FFFFFF);*/
+    background: linear-gradient(to bottom right, #000000, #FFFFFF);
     font-family: Inter;
     color: white; /* Texto blanco para contraste */
 }
